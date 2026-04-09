@@ -2,9 +2,9 @@
 Progetto per l'esame di metodi computazionali per la fisica.
 Tutte le analisi sono eseguite sia per i dati raccolti su base mensile che settimanale.
 Lo script python analizza le curve di luce delle quattro sorgenti:
--Calcola la trasformata di Fourier ai dati del flusso di fotoni cui è stata prima sottratta la media per annullare la componente continua.
--Calcola le frequenze.
--Calcola lo spettro di potenza.
+-Calcola la trasformata di Fourier ai dati del flusso di fotoni cui è stata prima sottratta la media per annullare la componente continua.\
+-Calcola le frequenze.\
+-Calcola lo spettro di potenza.\
 -Elimina il trend dello spettro di potenza delle sorgenti: esegue il fit dello spettro in scala loglog con una retta; ritrasforma la retta in scala lineare; calcola i valori sulla curva per le frequenze trovate; divide il valore dello spettro originale per i valori calcolati sulla curva ottimizzata.
 -Trova media e deviazione standard dell'insieme calcolato al punto sopra.
 -Individua gli indici dei picchi nello spettro di potenza, trattato come descritto, che sono maggiori della somma tra la maedia dello spettro corretto e due deviazioni standard dello stesso. 
