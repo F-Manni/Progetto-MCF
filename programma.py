@@ -120,7 +120,7 @@ def iddmax(logps, fitted_data):
 class Sorgente:
 
    
-    p0 = [-100, -14]
+    p0 = [-1, -14]
 
     
     def  __init__(self, file_path_W, file_path_M, color):
