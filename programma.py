@@ -280,7 +280,7 @@ if args.PowerSpectrumW:
     fig3.supylabel('Power spectrum (photons cm-2 s-1)^2')
     fig3.supxlabel('frequencies (cycles/day)')
     for key,j,k in zip(Sorgenti, (0,0,1,1),(0,1,0,1)):
-        psgW[j][k].bar(Sorgenti[key].frq['W'][Sorgenti[key].idmax['W'] + 1], Sorgenti[key].ps['W'][Sorgenti[key].idmax['W'] + 1], color = 'red', width = 0.0004)
+        psgW[j][k].bar(Sorgenti[key].frq['W'][Sorgenti[key].idmax['W'] + 1], Sorgenti[key].ps['W'][Sorgenti[key].idmax['W'] + 1], color = 'red', width = 0.0005)
         psgW[j][k].plot(Sorgenti[key].frq['W'], Sorgenti[key].ps['W'], color = Sorgenti[key].color, label = key)
         psgW[j][k].grid(True)
         psgW[j][k].legend()
@@ -294,7 +294,7 @@ if args.PowerSpectrumM:
     fig4.supxlabel('frequencies (cycles/day)')
     fig4.supylabel('Power spectrum (photons cm-2 s-1)^2')
     for key,j,k in zip(Sorgenti, (0,0,1,1),(0,1,0,1)):
-        psgM[j][k].bar(Sorgenti[key].frq['M'][Sorgenti[key].idmax['M'] + 1], Sorgenti[key].ps['M'][Sorgenti[key].idmax['M'] + 1], color = 'red', width = 0.0004)
+        psgM[j][k].bar(Sorgenti[key].frq['M'][Sorgenti[key].idmax['M'] + 1], Sorgenti[key].ps['M'][Sorgenti[key].idmax['M'] + 1], color = 'red', width = 0.0001)
         psgM[j][k].plot(Sorgenti[key].frq['M'], Sorgenti[key].ps['M'], color = Sorgenti[key].color, label = key)
         psgM[j][k].legend()
         psgM[j][k].grid(True)
