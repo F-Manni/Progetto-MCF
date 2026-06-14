@@ -234,8 +234,8 @@ for sorg in Sorgenti.values():
             sorg.hist[W].append(slcdmaxW)
             sorg.hist[M].append(slcdmaxM)
             it += 1
-            sorg.sign[W] = counterW / 1000
-            sorg.sign[M] = counterM / 1000
+    sorg.sign[W] = counterW / 1000
+    sorg.sign[M] = counterM / 1000
 
     
 ###############################
