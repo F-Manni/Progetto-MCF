@@ -76,8 +76,8 @@ def fit(logps, frq, F_fit, p0):
 
     """
     Esegue: fit con una retta in scala loglog dello spettro di potenza
-    Restituisce: dizionari con punti calcolati in corrispondenza delle frequenze sulla curva fittata e i parametri
-    
+    Restituisce: Punti calcolati in corrispondenza delle frequenze sulla curva fittata e i parametri
+
     Input: 
         
         # F_fit -> funzione per il fit                   #
@@ -97,7 +97,7 @@ def iddmax(logps, fitted_data):
 
     """
     Esegue: trova il valore massimo della distanza dei punti del ps in scala logaritmica dalla retta di fit e il relativo indice
-    Restituisce: dizionari con valore della distanza massima e l'indice sull'array del logaritmo dei valori. Per trovare l'indice originale serve aggiungere 1, poichè log(0) non è definito e il primo valore della Ft è 0 il log si calcola su [1:].
+    Restituisce: Valore della distanza massima e l'indice sull'array del logaritmo dei valori. Per trovare l'indice originale serve aggiungere 1, poichè log(0) non è definito e il primo valore della Ft è 0 il                 log si calcola su [1:].
 
     """
     arr = logps - fitted_data
